@@ -1,0 +1,63 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background:#fff;
+}
+
+header {
+    background: yellow;
+
+    /*linha onde inicia e tarmina*/
+    
+    /*grid-column: 1/3; forma resumida*/
+    /*grid-column-start: 1;
+    grid-column-end: 3;*/
+
+    /*grid-row:3/4; outra forma*/
+    /*grid-row-start: 3;
+    grid-row-end: 4;*/
+
+    grid-area: h;
+}
+
+main {
+    background: blue;
+
+   /* grid-column-start: 1;
+    grid-column-end: 2;*/
+
+    grid-area: m;
+
+}
+
+aside {
+    background: green;
+
+   /* grid-column-start: 2;
+    grid-column-end: 3;*/
+
+    grid-area: a;
+
+}
+
+footer {
+    background: red;
+
+   /* grid-column-start: 1;
+    grid-column-end: 3;*/
+
+    grid-area: f;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 20vh 70vh 10vh; /*altura de cada linha*/
+
+    grid-template-areas: "h h" /*header ocupa as duas colunas e primeira linha*/
+                         "m a" /*mai e aside dividem a duas coluna e segunda linha*/
+                         "f f"; /*footer coupa duas colunas e ultima linha*/
+
+}

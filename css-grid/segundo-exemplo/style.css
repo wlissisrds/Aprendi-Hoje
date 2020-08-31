@@ -1,0 +1,50 @@
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    background: #333;
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+   /* grid-template-columns: 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px ;*/
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+
+    grid-gap:5px;
+
+   /* justify-content: center;
+    align-content: center;*/
+
+    /*justify-items: end;
+    align-items: end;*/
+}
+
+.container > div {
+    background: rgb(55, 211, 211);
+
+    width: 50%;
+    height: 50%;
+
+    justify-self: center;
+    align-self: center;
+}
+
+#center {
+    justify-self: center;
+}
+
+#end {
+    justify-self: end;
+}
+
+#start {
+    justify-self: start;
+}

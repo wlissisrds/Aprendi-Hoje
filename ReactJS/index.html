@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReactJS</title>
+ 
+</head>
+<body>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <div id="app"></div>
+
+    <script >
+        function MeuComponent1() {
+            return  React.createElement(MeuComponent2);
+        }
+        function MeuComponent2() {
+            return  React.createElement(MeuComponent3);
+        }
+        function MeuComponent3() {
+            return  React.createElement(MeuComponent4);
+        }
+        function MeuComponent4() {
+            return  React.createElement('p', {id: 'componente-4'}, 'Componente 4');
+        }
+        function MeuComponent() {
+            return  React.createElement('div', {className: 'main-componente'},
+                React.createElement(MeuComponent1) );
+        }
+
+    ReactDOM.render(
+        React.createElement(MeuComponent),
+        document.querySelector('#app')
+    )
+    </script>
+</body>
+</html>

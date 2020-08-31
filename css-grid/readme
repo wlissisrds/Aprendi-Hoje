@@ -1,0 +1,57 @@
+# css GRID
+
+## GRID
+
+- Bimensional
+- Divisão de toda a página em linhas e colunas
+
+# GRID ou FlexBox
+
+- Um complementa o outro.
+
+## PROPRIEDADES
+('container' & 'item(s)')
+
+### CONTAINER
+
+- diplay: grid;
+- grid-tamplete-columns;
+- grid-tamplete-rows;
+- grid-gap
+    - grid-row-gap;
+    - grid-column-gap;
+grid-tamplete-areas;
+
+### ITEM(s)
+
+- diplay-column;
+    - grid-column-start  ;
+    - grid-column-end;
+- grid-row
+    - grid-row-start;
+    - grid-row-end;
+grid-area;
+
+# GRID: alinhamento
+
+- justify-content
+- align-content
+- justify-items
+- align-tems
+- justify-self
+- align-self
+
+Vamos separa-los em dois grupos
+## justify e align
+
+**eixo X**
+**eixo Y**
+
+## content, items, self
+
+**align-content e justify-content** permite alinhar o grid dentro do espaço fora do grid
+
+**items**   vai permitir alinha os itens do nosso grid, em qualquer espaço disponível,
+ na célula que ela habitar
+
+ **self** vai nos permiti alinhar o item em si
