@@ -1,0 +1,19 @@
+# NodeJS é uma plataforma que se utiliza da V8(engine de entendimento do javascript do google chorme) 
+no lado do back-end.
+
+# criação de API Rest com Express, Nodejs e mongoDB.
+
+# Express é um micro framework que ajuda na criação de rotas e views.
+
+##npm install mongoose // ORM(encapsula a logica do BD através do código) de banco nao relacional
+##npm install nodemon // para rodar servidor
+
+
+###usado:
+-insomnia (para teste de rotas)
+-mongoDB (studio T3 p/ mongoDB; mongoose.Schema(para registrar no BD))
+-docker
+-Express
+-nodemon
+-Nodejs
+-conhecimento em JSON
