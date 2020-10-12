@@ -1,12 +1,14 @@
 //importou o express
 const express = require('express');
 const mongoose = require('mongoose');
+const cors = require('cors');
 
 
 //iniciando o app
 const app = express();
 //permite que envie info em formato de JSON pelo express
 app.use(express.json());
+app.use(cors())
 
 //iniciando o BD
 mongoose.connect('mongodb://localhost:27017/nodeapi',

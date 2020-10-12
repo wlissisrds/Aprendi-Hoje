@@ -17,3 +17,4 @@ no lado do back-end.
 -nodemon
 -Nodejs
 -conhecimento em JSON
+-CORS (permissão para acessar a minha API)
